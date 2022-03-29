@@ -11,6 +11,6 @@
 #pragma once
 
 bool addCat(const char name[], const enum Gender gender,
-            const enum Breed breed, const bool isfixed, const float weight,
+            const enum Breed breed, const bool isfixed, const Weight weight,
             const enum Color collar1, const enum Color collar2,
             const unsigned long long license );

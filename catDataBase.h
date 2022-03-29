@@ -36,6 +36,8 @@ struct Cat {  //database is
     unsigned long long   license;
 };
 
+    typedef float Weight;
+
 extern struct Cat dataBase[MAX_CATS];
 
 extern int numOfCats; //global variable for number of cats in database

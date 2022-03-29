@@ -13,7 +13,7 @@
 
 extern void fixCat(int catNum);
 extern bool updateCatName(int catNum, char newName[]);
-extern bool updateCatWeight(int catNum, float newWeight);
+extern bool updateCatWeight(int catNum, Weight newWeight);
 extern void updateLicense(const int catNum, const unsigned long long newLicense);
 extern void updateCatCollar2(const int catNum, const enum Color newColor);
 extern void updateCatCollar1(const int catNum, const enum Color newColor);

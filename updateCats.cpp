@@ -69,7 +69,7 @@ void fixCat(int catNum){
 }
 
 
-bool updateCatWeight(int catNum, float newWeight){
+bool updateCatWeight(int catNum, Weight newWeight){
 
     if (newWeight <= 0 ){ //weight must be non negative and greater than zero.
         fprintf(stderr, "%s: invalid weight\n", PROGRAM_NAME);
