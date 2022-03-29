@@ -13,5 +13,5 @@
 #include "catDataBase.h"
 
 struct Cat dataBase[MAX_CATS];
-int numOfCats = 0;
+NumCats numOfCats = 0;
 

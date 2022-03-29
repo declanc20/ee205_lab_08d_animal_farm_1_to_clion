@@ -37,7 +37,7 @@ struct Cat {  //database is
 };
 
     typedef float Weight;
-
+    typedef int   NumCats;
 extern struct Cat dataBase[MAX_CATS];
 
-extern int numOfCats; //global variable for number of cats in database
+extern NumCats numOfCats; //global variable for number of cats in database
