@@ -35,39 +35,39 @@ int main(){
 
     addCat( "Chili", UNKNOWN_GENDER, SHORTHAIR, false, 19.0, WHITE, BLACK, 106 ) ;
 
-#ifdef DEBUG
-    /*fails because too long of a name*/
+/*#ifdef DEBUG
+    //fails because too long of a name
    assert(addCat( "fkjebfkjbekfjbwekjbkjbkjebkjwebkjwbekjbwekjfbkejwbfkjbfk"
             "jeleflebwekfkewfkwpefhpoefpojwefojd;lw;dljqw;ldj;slmd;wpq ",
             UNKNOWN_GENDER, SHORTHAIR, false, 19.0, BLACK, PINK, 107 )
             == FALSE) ;
-   /*invalid index failure*/
+   //invalid index failure
    assert(printCat(8000) );
-   /*fails because no cat with that name*/
+   //fails because no cat with that name
    assert(findCat("Nonexistent"));
-   /*falis because no cat with that name*/
+   //falis because no cat with that name
    assert(updateCatName(23, "Fake") ==FALSE);
-   /*fails because string length is 0*/
+   //fails because string length is 0
    assert(updateCatName(1, "") == FALSE);
-   /*fails because cant update a cat with name more than 50 chars*/
+   //fails because cant update a cat with name more than 50 chars
    assert(updateCatName(1," eefiheofhowehfoihfowehlfwelkhlkwehlkwelknweld"
                      "kjflwekjflkewflkewflkjwlekfjlwkejfljwefe;wejf") == FALSE);
-   /*fails because no cat with that name to update*/
+   //fails because no cat with that name to update
    assert(updateCatName(3, "Chili") == FALSE);
-   /*fails to update with a negative weight*/
+   //fails to update with a negative weight
    assert(updateCatWeight(0, -10.0) == FALSE);
-#endif
+#endif*/
 
 
     printAllCats();
 
     int kali = findCat( "Kali" ) ;
 
-#ifdef DEBUG
+/*#ifdef DEBUG
     printf("the value of kali is: %d\n", kali);//debug
    assert(updateCatName( kali, "Chili" ) == FALSE) ; // this should fail
    printCat( kali );
-#endif
+#endif*/
 
     assert(updateCatName( kali , "Capulet" ) == TRUE);
     assert(updateCatWeight( kali, 9.9 ) == TRUE);
