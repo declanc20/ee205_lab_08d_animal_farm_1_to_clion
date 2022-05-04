@@ -56,6 +56,7 @@ int main(){
    assert(updateCatName(3, "Chili") == FALSE);
    //fails to update with a negative weight
    assert(updateCatWeight(0, -10.0) == FALSE);
+   //working?
 #endif*/
 
 
